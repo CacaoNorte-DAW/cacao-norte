@@ -1,24 +1,61 @@
-# Compiled class file
+# ===== Java / Maven =====
+target/
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+*.log
 hs_err_pid*
-replay_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# ===== Spring Boot: configuración local con contraseñas =====
+application-local.properties
+application-local.yml
+application-dev.properties
+application-dev.yml
+
+# ===== Variables de entorno y claves (NUNCA subir) =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Oracle Cloud: wallet de conexión (NUNCA subir) =====
+wallet/
+Wallet_*/
+Wallet_*.zip
+*.sso
+*.p12
+*.jks
+cwallet.sso
+ewallet.p12
+tnsnames.ora
+sqlnet.ora
+ojdbc.properties
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== VS Code =====
+.vscode/
+!.vscode/extensions.json
+
+# ===== Node (por si el frontend usa herramientas) =====
+node_modules/
+npm-debug.log*
+dist/
+build/
+
+# ===== Sistema operativo =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Varios =====
+*.tmp
+*.bak
+*.swp
